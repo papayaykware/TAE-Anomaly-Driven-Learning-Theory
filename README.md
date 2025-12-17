@@ -61,5 +61,7 @@ Herramientas de IA generativa han sido utilizadas como apoyo estructural y edito
 
 Versión 1.0 — marco conceptual estable, abierto a revisión y expansión.
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+Esta obra está bajo una [Licencia Creative Commons Atribución-NoComercial 4.0 Internacional](https://creativecommons.org/licenses/by-nc/4.0/).
 
 
