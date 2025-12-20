@@ -1,0 +1,166 @@
+% =========================================================
+% Apéndice — Formalización matemático–cognitiva TAE–METFI
+% =========================================================
+
+\appendix
+\section{Formalización matemático--cognitiva de la Teoría de Aprendizaje por Excepción (TAE) integrada con METFI}
+
+\subsection{Marco general}
+
+La Teoría de Aprendizaje por Excepción (TAE) describe un régimen cognitivo no incremental en el que la actualización del sistema no se produce por gradiente estadístico ni por refuerzo acumulativo, sino por eventos de ruptura que exceden el espacio de previsión del modelo interno.
+
+La integración con el Modelo Electromagnético Toroidal de Forzamiento Interno (METFI) permite describir dichos eventos como pérdidas locales de simetría toroidal en el campo cognitivo del sistema, interpretado como una arquitectura dinámica de energía--información.
+
+Este apéndice propone una formalización mínima que:
+\begin{itemize}
+    \item No reduce el fenómeno a aprendizaje supervisado.
+    \item Evita la clausura probabilística.
+    \item Introduce operadores de excepción, ruptura y reconfiguración topológica.
+\end{itemize}
+
+\subsection{Definición del sistema cognitivo}
+
+Sea un sistema cognitivo \( \mathcal{C} \) definido como:
+
+\begin{equation}
+\mathcal{C} = \langle \mathcal{S}, \mathcal{M}, \Phi, \mathcal{T} \rangle
+\end{equation}
+
+donde:
+\begin{itemize}
+    \item \( \mathcal{S} \) es el espacio de estados cognitivos accesibles.
+    \item \( \mathcal{M} \) es el modelo interno operativo.
+    \item \( \Phi \) es el campo dinámico de activación cognitiva.
+    \item \( \mathcal{T} \) es la topología interna del sistema.
+\end{itemize}
+
+En METFI, el campo \( \Phi \) se modela como un campo toroidal cerrado con auto-forzamiento interno:
+
+\begin{equation}
+\Phi = \nabla \times \mathbf{A} + \lambda \Phi
+\end{equation}
+
+donde \( \lambda \) representa el grado de auto-sostenimiento cognitivo o inercia interpretativa.
+
+\subsection{Normalidad cognitiva y aprendizaje clásico}
+
+Definimos el régimen cognitivo normal como aquel en el que:
+
+\begin{equation}
+\forall t,\quad \Delta \mathcal{M}_t = f(\epsilon_t)
+\end{equation}
+
+donde \( \epsilon_t \) es el error predictivo y \( f \) es una función continua y acotada.
+
+Este régimen corresponde a aprendizaje bayesiano, ajuste por gradiente u optimización incremental. La TAE no opera en este dominio.
+
+\subsection{Evento de excepción}
+
+Se define un evento de excepción \( E_x \) como una perturbación \( \delta \Phi \) tal que:
+
+\begin{equation}
+\delta \Phi \notin \mathrm{span}(\mathcal{M})
+\end{equation}
+
+Es decir, no existe transformación interna del modelo que permita absorber el evento sin violar su coherencia estructural.
+
+Formalmente:
+
+\begin{equation}
+\exists E_x : \Vert \delta \Phi \Vert > \theta_c
+\end{equation}
+
+donde \( \theta_c \) es el umbral de tolerancia cognitiva.
+
+\subsection{Colapso funcional local}
+
+Cuando ocurre un evento de excepción, el sistema entra en un colapso funcional local:
+
+\begin{equation}
+\mathcal{M}_t \rightarrow \varnothing_{\mathrm{operativo}}
+\end{equation}
+
+Este colapso no implica la pérdida total del sistema, sino la suspensión temporal de su capacidad explicativa.
+
+Desde la perspectiva METFI, este estado corresponde a una ruptura de la simetría toroidal del campo cognitivo y a la pérdida de cierre del flujo energético--informacional.
+
+\subsection{Operador de excepción}
+
+Definimos el operador de excepción:
+
+\begin{equation}
+\mathbb{E} : \mathcal{C} \rightarrow \mathcal{C}'
+\end{equation}
+
+tal que:
+
+\begin{equation}
+\mathbb{E}(\mathcal{M}) \neq \mathcal{M} + \Delta \mathcal{M}
+\end{equation}
+
+sino:
+
+\begin{equation}
+\mathbb{E}(\mathcal{M}) = \mathcal{M}' \quad \text{con} \quad \mathcal{T}' \neq \mathcal{T}
+\end{equation}
+
+El aprendizaje por excepción no ajusta parámetros, sino que reconfigura la topología cognitiva.
+
+\subsection{Reconfiguración topológica}
+
+La transición inducida por TAE se expresa como:
+
+\begin{equation}
+\mathcal{T} \xrightarrow{E_x} \mathcal{T}'
+\end{equation}
+
+Este proceso es análogo a una transición de fase no lineal en sistemas físicos forzados internamente.
+
+\subsection{Dinámica toroidal cognitiva}
+
+El campo cognitivo toroidal satisface:
+
+\begin{equation}
+\oint_{\Gamma} \Phi \cdot d\mathbf{l} = \Psi
+\end{equation}
+
+Durante el aprendizaje normal, \( \Psi \) permanece constante. Durante aprendizaje por excepción:
+
+\begin{equation}
+\Delta \Psi \neq 0
+\end{equation}
+
+lo que implica redistribución interna de energía cognitiva y bifurcaciones interpretativas estables.
+
+\subsection{Aprendizaje no convergente}
+
+A diferencia del aprendizaje clásico, la TAE no converge a un óptimo. El estado aprendido se define como:
+
+\begin{equation}
+\mathcal{L}_{\mathrm{TAE}} = \{ \mathcal{M}_i \}_{i=1}^{n}
+\end{equation}
+
+donde los modelos no son totalmente ordenables.
+
+\subsection{Métrica de aprendizaje por excepción}
+
+Se propone una métrica no escalar:
+
+\begin{equation}
+\Lambda = \langle \Delta \mathcal{T}, \Delta \Psi, \kappa \rangle
+\end{equation}
+
+donde:
+\begin{itemize}
+    \item \( \Delta \mathcal{T} \) representa el cambio topológico.
+    \item \( \Delta \Psi \) la variación del flujo toroidal.
+    \item \( \kappa \) el aumento de tolerancia a eventos no modelables.
+\end{itemize}
+
+\subsection{Implicaciones cognitivas y sistémicas}
+
+Desde esta formalización, aprender no es optimizar sino sobrevivir a la ruptura. La inteligencia avanzada se define como la capacidad de reconfiguración post--colapso.
+
+\subsection{Cierre del apéndice}
+
+Este apéndice establece un lenguaje matemático mínimo para describir el aprendizaje por excepción integrado con METFI, habilitando puentes hacia la física de sistemas no lineales y futuras implementaciones computacionales sin clausurar el marco teórico.
